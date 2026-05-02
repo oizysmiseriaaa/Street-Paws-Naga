@@ -180,8 +180,8 @@ let animalsList: Animal[] = [];
         if (a.photo) {
           // Check if it's a local upload (/uploads/) or remote
           if (a.photo.startsWith('/uploads/')) {
-            // Local upload - use full URL from local server
-            imageUrl = `http://localhost:3001${a.photo}`;
+            // Use relative path - works on all devices since Next.js serves public/uploads/
+            imageUrl = a.photo;
           } else if (a.photo.startsWith('http')) {
             imageUrl = a.photo;
           } else {

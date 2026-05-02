@@ -217,7 +217,8 @@ const normalized = animalsList.map((a: any) => {
         if (a.photo) {
           // Support both local and remote images
           if (a.photo.startsWith('/uploads/')) {
-            imageUrl = `http://localhost:3001${a.photo}`;
+            // Use relative path - works on all devices since Next.js serves public/uploads/
+            imageUrl = a.photo;
           } else if (a.photo.startsWith('http')) {
             imageUrl = a.photo;
           } else {
