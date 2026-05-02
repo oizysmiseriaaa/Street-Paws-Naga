@@ -318,7 +318,7 @@ animal_id: selectedAnimal.animal_id,
       });
 
       if (response.ok) {
-        addNotification("🎉 Adoption request submitted successfully!", "success");
+        addNotification("Adoption request submitted successfully!", "success");
         setShowAdoptionModal(false);
         setSelectedAnimal(null);
         await loadAnimals();
