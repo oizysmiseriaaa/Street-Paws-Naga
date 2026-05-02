@@ -42,10 +42,17 @@ export default function VolunteerPage() {
             Contact
           </Link>
 
-          <Link href="/register">
-            <button className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-10 py-4 rounded-3xl font-bold text-lg shadow-xl hover:scale-105 transition-all">
-               Get Started
-            </button>
+          <Link
+            href="/register"
+            className="group relative inline-flex items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-600 px-10 py-4 text-lg font-bold text-white shadow-2xl transition-all duration-400 hover:shadow-3xl hover:scale-105 active:scale-95 border border-white/30 backdrop-blur-xl"
+          >
+            <span className="relative z-10 flex items-center space-x-2">
+              <span>Get Started</span>
+              <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-cyan-500 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
           </Link>
         </div>
       </nav>
@@ -146,11 +153,13 @@ function VolunteerCard({
   title,
   desc,
   time,
+  color,
 }: VolunteerCardProps) {
   return (
-    <div className="p-10 rounded-3xl bg-white/90 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2">
-
-      <div className="text-6xl mb-6">{icon}</div>
+    <div className="p-10 rounded-3xl bg-white/90 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border border-gray-200">
+      <div className={`mb-6 inline-flex h-20 w-20 items-center justify-center rounded-3xl bg-gradient-to-r ${color} text-5xl shadow-lg`}>
+        {icon}
+      </div>
 
       <h3 className="text-2xl font-bold mb-4">{title}</h3>
 

@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001",
-    "dev:light": "next dev -p 3001",
-    "dev:safe": "node --max-old-space-size=2048 node_modules/next/dist/bin/next dev -p 3001",
-    "dev:3000": "next dev -p 3000",
-    "build": "next build",
+    "dev": "next dev --webpack -p 3001",
+    "dev:light": "next dev --webpack -p 3001",
+    "dev:safe": "node --max-old-space-size=2048 node_modules/next/dist/bin/next dev --webpack -p 3001",
+    "dev:3000": "next dev --webpack -p 3000",
+    "build": "next build --webpack",
     "start": "next start -p 3001",
     "lint": "next lint",
     "clean": "rm -rf .next node_modules && npm install"
