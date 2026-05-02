@@ -34,7 +34,7 @@ export default function AboutPage() {
           <Link href="/register">
             <button className="group relative bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-10 py-4 rounded-3xl font-bold text-lg shadow-2xl hover:shadow-3xl hover:scale-105 active:scale-95 transition-all duration-400 overflow-hidden border border-white/30 backdrop-blur-xl">
               <span className="relative z-10 flex items-center space-x-2">
-                🚀 Get Started
+                 Get Started
                 <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -47,7 +47,7 @@ export default function AboutPage() {
         {/* 📱 Mobile Hamburger (Hidden on Desktop) */}
         <div className="md:hidden flex items-center space-x-4">
           <Link href="/register" className="group bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-3 rounded-3xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
-           🚀 Get Started
+            Get Started
           </Link>
         </div>
       </nav>

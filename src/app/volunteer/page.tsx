@@ -44,7 +44,7 @@ export default function VolunteerPage() {
 
           <Link href="/register">
             <button className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-10 py-4 rounded-3xl font-bold text-lg shadow-xl hover:scale-105 transition-all">
-              🚀 Get Started
+               Get Started
             </button>
           </Link>
         </div>
