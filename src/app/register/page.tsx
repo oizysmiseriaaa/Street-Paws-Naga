@@ -413,7 +413,14 @@ export default function LoginPage() {
               {loading ? 'Loading...' : isRegister ? 'Create Account' : 'Login'}
             </button>
 
-          </form>
+</form>
+
+          <Link
+            href="/"
+            className="block w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white py-4 px-8 rounded-3xl font-bold text-lg shadow-xl hover:shadow-2xl hover:from-gray-600 hover:to-gray-700 transition-all hover:scale-105 transform text-center"
+          >
+            ← Back to Home
+          </Link>
 
         </div>
       </div>
